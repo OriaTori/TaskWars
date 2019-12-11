@@ -1,6 +1,8 @@
-const {Item, validateItem} = require('../models/item');
+const {item, validateItem} = require('../models/item');
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+const Item = mongoose.model('items', item);
 
 router.get('/', async (req, res) => {
     const items = await Item.find().sort('slot');
