@@ -1,6 +1,6 @@
 import React from 'react';
-import { Segment, Grid, Divider, Button, Icon, Header } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
+import { Button, Divider, Grid, Header, Icon, Segment } from 'semantic-ui-react';
 import setHeaders from '../../utils/setHeaders';
 
 class UserBox extends React.Component {

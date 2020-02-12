@@ -1,17 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-
-import PublicRoute from '../PublicRoute';
-import {
-  Button,
-  Form,
-  Grid,
-  Header,
-  Message,
-  Segment,
-} from 'semantic-ui-react'
+import { BrowserRouter } from 'react-router-dom';
+import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 import Store from '../../Store';
 import ErrorMessage from '../ErrorMessage';
+
 const axios = require('axios');
 
 class Login extends React.Component {
@@ -29,7 +21,7 @@ class Login extends React.Component {
   postUser = async () => {
     try {
       if (this.state.password !== this.state.confirmPassword) {
-        throw 'Both passwords must be the same';
+        throw new Error('Both passwords must be the same');
       }
 
       const res = await axios({

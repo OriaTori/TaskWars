@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid, Header } from 'semantic-ui-react';
+import { Grid, Header, Segment } from 'semantic-ui-react';
 import ViewImage from './ViewImage';
 
 class Screenshots extends React.Component {
@@ -13,7 +13,6 @@ class Screenshots extends React.Component {
     handleHide = () => this.setState({ active: false })
 
     render() {
-        const { active } = this.state;
         return (
             <Segment color='green' inverted>
                 <Segment inverted >

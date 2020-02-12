@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Grid } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 
 class Quote extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Quote extends React.Component {
     }
 
     render() {
-        
+
         return (
             <Segment textAlign='center' color='green' inverted>
                 <Grid columns={8} verticalAlign='middle'>

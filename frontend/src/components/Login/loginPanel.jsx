@@ -1,13 +1,7 @@
+import jwt from 'jwt-decode';
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import {
-  Button,
-  Form,
-  Grid,
-  Header,
-  Segment,
-} from 'semantic-ui-react'
-import jwt from 'jwt-decode';
+import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react';
 import Store from '../../Store';
 import ErrorMessage from '../ErrorMessage';
 const axios = require('axios');
@@ -36,7 +30,7 @@ class LoginPanel extends React.Component {
       });
       console.log(res.status);
 
-      if(res.status === 203) {
+      if (res.status === 203) {
         localStorage.setItem('email', this.state.email);
         document.location.href = '/login/notVerified';
       } else if (res.status === 200) {

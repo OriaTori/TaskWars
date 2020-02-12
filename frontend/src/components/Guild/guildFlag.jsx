@@ -1,10 +1,7 @@
 import React from 'react';
-import { Image, Modal, Header, Grid, Segment } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+import { Image, Modal, Segment } from 'semantic-ui-react';
 import GuildFlagModal from './guildFlagModal';
-import { compareSync } from 'bcryptjs';
-import setHeaders from '../../utils/setHeaders';
-const _ = require('lodash')
 
 class Flag extends React.Component {
   constructor(props) {
