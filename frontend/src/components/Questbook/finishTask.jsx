@@ -195,7 +195,7 @@ class FinishTask extends React.Component {
         const guildResponse = await fetch(`/api/guilds/${guild_id}`, setHeaders());
         const guild = await guildResponse.json();
         console.log(guild);
-        guild.current_fight.task_to_dmg.foreach((id) => {
+        guild.current_fight.task_to_dmg.forEach((id) => {
           if (id === task_id) {
             res(guild);
           }
