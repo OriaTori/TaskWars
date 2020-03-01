@@ -24,7 +24,7 @@ class Stats extends React.Component {
     render() {
         return (
             <Segment textAlign='center' color='green' inverted>
-                <Segment inverted style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center'}} >
+                <Segment inverted style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-around'}} >
                     
                         <Item>
                             <Header as='h1' inverted >JOIN</Header>
