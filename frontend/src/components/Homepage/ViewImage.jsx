@@ -32,10 +32,8 @@ class ViewImage extends React.Component {
                 dimmer={{ active, content }}
                 onMouseEnter={this.handleShow}
                 onMouseLeave={this.handleHide}
-                size='medium'
                 src={this.props.src}
                 rounded
-                bordered
             />
         );
     }
