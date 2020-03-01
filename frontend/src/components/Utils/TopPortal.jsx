@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Button, Header, TransitionablePortal, Dimmer } from 'semantic-ui-react';
+import { Button, Dimmer, Header, Segment, TransitionablePortal } from 'semantic-ui-react';
 
 class TopPortal extends React.Component {
     _isMounted = false;
@@ -11,7 +11,7 @@ class TopPortal extends React.Component {
     }
 
     handleClose = () => this.setState({ portalOpen: false });
-    
+
     handleOpen = async () => {
         this._isMounted = true;
         this.setState({ portalOpen: true });

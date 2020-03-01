@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Grid } from 'semantic-ui-react';
 import Quote from './Quote';
-import Stats from './Stats';
 import Screenshots from './Screenshots';
+import Stats from './Stats';
 
 class HomepageContent extends React.Component {
 
