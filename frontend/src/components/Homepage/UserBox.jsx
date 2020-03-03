@@ -36,7 +36,7 @@ class UserBox extends React.Component {
                             <Container>
                                 <Icon name='pencil' size='huge' color='green' />
                                 <h2 style={{ margin: '10px 20px 10px 20px' }}>Join us now by registering...</h2>
-                                <Button as={NavLink} to={'/register'} color='green'>
+                                <Button as={NavLink} to={'/register'} color='blue'>
                                     Register!
                                 </Button>
                             </Container>
@@ -48,7 +48,7 @@ class UserBox extends React.Component {
                             <Container>
                                 <Icon name='address card' size='huge' color='green' />
                                 <h2 style={{ margin: '10px' }}>...let's get to work by logging in</h2>
-                                <Button as={NavLink} to={'/login'} color='green'>
+                                <Button as={NavLink} to={'/login'} color='blue'>
                                     Login!
                                 </Button>
                             </Container>
@@ -60,7 +60,7 @@ class UserBox extends React.Component {
                                 <Grid.Column>
                                     <Icon name='pencil' size='huge' color='green' />
                                     <h2 style={{ marginTop: '10px' }}>Join us now by registering...</h2>
-                                    <Button as={NavLink} to={'/register'} color='green'>
+                                    <Button as={NavLink} to={'/register'} color='blue'>
                                         Register!
                                 </Button>
                                 </Grid.Column>
@@ -68,7 +68,7 @@ class UserBox extends React.Component {
                                 <Grid.Column>
                                     <Icon name='address card' size='huge' color='green' />
                                     <h2 style={{ marginTop: '10px' }}>...let's get to work by logging in</h2>
-                                    <Button as={NavLink} to={'/login'} color='green'>
+                                    <Button as={NavLink} to={'/login'} color='blue'>
                                         Login!
                                 </Button>
                                 </Grid.Column>

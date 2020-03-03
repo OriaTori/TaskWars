@@ -60,33 +60,46 @@ class LoginPanel extends React.Component {
     if (this.context.isLogged) return <Redirect to="/" />;
 
     return (
-      <Grid centered>
-        <Segment compact textAlign='left' inverted>
+      <Segment color={'pink'} inverted >
+        <Segment textAlign='left' inverted>
           <Form error onSubmit={this.onButtonSubmit} inverted>
-            <Header inverted textAlign='center'>Login</Header>
-            <Form.Input
-              label='Email'
-              placeholder='Email'
-              name='email'
-              type='email'
-              value={this.state.email}
-              onChange={e => this.setState({ email: e.target.value })}
-            />
-            <Form.Input
-              label='Password'
-              placeholder='Password'
-              name='password'
-              type='password'
-              value={this.state.password}
-              onChange={e => this.setState({ password: e.target.value })}
-              error={this.loginValidate()}
-            />
-            <Grid textAlign='center' padded>
-              <Button color='purple' type='submit'>Submit</Button>
+            <Grid>
+              <Grid.Row centered>
+                <Header inverted textAlign='center'>Login</Header>
+              </Grid.Row>
+              <Grid.Row centred columns={2}>
+                <Grid.Column>
+                  <Form.Input
+                    label='Email'
+                    placeholder='Email'
+                    name='email'
+                    type='email'
+                    value={this.state.email}
+                    onChange={e => this.setState({ email: e.target.value })}
+                  />
+                </Grid.Column>
+                <Grid.Column>
+                  <Form.Input
+                    label='Password'
+                    placeholder='Password'
+                    name='password'
+                    type='password'
+                    value={this.state.password}
+                    onChange={e => this.setState({ password: e.target.value })}
+                    error={this.loginValidate()}
+                  />
+                </Grid.Column>
+
+              </Grid.Row>
+
+              <Grid.Row textAlign='center' padded centered>
+                <Button color='blue' type='submit'>Submit</Button>
+              </Grid.Row>
             </Grid>
+
           </Form>
         </Segment>
-      </Grid >
+      </Segment>
     );
   }
 }
